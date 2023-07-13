@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      min-height: calc(100% - 100px); /* adjust this value based on the height of your header and footer */
+    }
+    footer {
+      height: 100px; /* adjust this value based on the height of your footer */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">djangoApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'djangoApp:index' %}">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'djangoApp:detail' %}">Detail</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <em><h4 style="text-align:center;">This is the header</h4></em> -->
+
+  <!-- page content goes here -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.3/dist/umd/popper.min.js"
+          integrity="sha384-P7GtQj7nSF3hX91uZf5yYMWUg5zX2XGyR8Tc8JIF2BaK9Q+cHJdI7RrDzqkG4YbK"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
