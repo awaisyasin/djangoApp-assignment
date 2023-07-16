@@ -8,4 +8,5 @@ urlpatterns = [
     path("details/", detail, name='detail'),
     path("header/", header, name='header'),
     path("footer/", footer, name='footer'),
+    path("contact/", contact, name='contact'),
 ]

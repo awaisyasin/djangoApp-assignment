@@ -12,3 +12,6 @@ def header(request):
 
 def footer(request):
     return render(request, 'djangoApp/footer.html')
+
+def contact(request):
+    return render(request, 'djangoApp/contact.html')
